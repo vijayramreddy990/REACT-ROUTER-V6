@@ -1,8 +1,9 @@
 import React from "react";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Navigate, Route, Routes } from "react-router-dom";
 import About from "./components/About";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
+import Page4044 from "./components/Page4044";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/*" element={<Navigate to={"/"} />} />
         </Routes>
       </BrowserRouter>
     </div>
