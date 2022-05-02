@@ -28,6 +28,11 @@ const NavBar = () => {
             Contact Us
           </NavLink>
         </li>
+        <li>
+          <NavLink className={"nav-bar-link"} to="/filter">
+            Filter
+          </NavLink>
+        </li>
       </ul>
     </div>
   );
