@@ -20,6 +20,9 @@
 .nav-bar-link:hover {
   color: green;
 }
+.nav-bar-link.active {
+  color: skyblue;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

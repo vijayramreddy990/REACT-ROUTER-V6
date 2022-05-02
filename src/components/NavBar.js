@@ -6,7 +6,15 @@ const NavBar = () => {
     <div>
       <ul className="navbar">
         <li>
-          <NavLink className={"nav-bar-link"} to="/about">
+          <NavLink
+            style={({ isActive }) => {
+              return {
+                color: isActive ? "yellow" : "black",
+              };
+            }}
+            className={"nav-bar-link"}
+            to="/about"
+          >
             About
           </NavLink>
         </li>
